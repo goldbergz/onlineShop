@@ -12,15 +12,16 @@
   
     <header class="header page__section">
       <img src="<%=require('./assets/logo.svg')%>" alt="Логотип проекта" class="logo header__logo">
-    </header>
 
-    <main class="content shrink-0 grow">
       <section class="search page__section">
-        <div class="search__block">
+        <div class="search__form">
           <input class="search__input">
           <button class="search__button" type="button"></button>
         </div>
       </section>
+    </header>
+
+    <main class="content shrink-0 grow">
     
       <section class="products page__section">
         <ul class="products__list">
@@ -48,8 +49,8 @@
     <li class="product__item card">
       <img class="card__image" src="" alt="" />
       <button type="button" class="card__delete-button"></button>
-      <div class="card__description">
-        <h2 class="card__title">
+      <div class="card__description flex justify-between items-center bg-white px-5 py-6.25">
+        <h2 class="card__title max-w-55 text-[24px] leading-[29px] overflow-hidden whitespace-nowrap overflow-ellipsis m-0">
         </h2>
       </div>
     </li>

@@ -1,0 +1,16 @@
+@layer components {
+  .products {
+  @apply font-sans py-3.75 pb-9;
+}
+
+.products__list {
+  @apply grid justify-center gap-y-5 gap-x-4.5 list-none m-0 p-0;
+  grid-template-columns: repeat(auto-fit, 282px);
+}
+
+@media screen and (max-width: 568px) {
+  .products {
+    @apply pb-4.5;
+  }
+}
+}

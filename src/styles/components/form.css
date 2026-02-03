@@ -1,0 +1,14 @@
+@layer components {
+  .search__form {
+  @apply mt-6.75;
+}
+
+.search__input {
+  @apply w-full h-11.75 border-0 border-b border-b-black/20 text-[14px] leading-4.5 box-border pt-2.5 mb-2.5;
+}
+
+.search__input:last-of-type {
+  @apply mb-0;
+}
+
+}

@@ -3,9 +3,20 @@
   @apply font-sans shrink-0 py-7.5 px-0 pb-15;
 }
 
+.footer__copyright {
+  @apply m-0 text-[18px] leading-5.5 text-[#545454];
+}
+
+
 @media screen and (max-width: 568px) {
   .footer {
     @apply pb-9;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .footer__copyright {
+    @apply text-[14px] leading-[17px];
   }
 }
 }
