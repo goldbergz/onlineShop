@@ -1,0 +1,10 @@
+@import 'tailwindcss';
+
+@import './base/base.css';
+@import './page/page.css';
+@import './components/header.css';
+@import './components/footer.css';
+@import './components/card.css';
+@import './components/list.css';
+@import './components/popup.css';
+

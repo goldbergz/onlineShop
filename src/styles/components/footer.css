@@ -1,0 +1,11 @@
+@layer components {
+.footer {
+  @apply font-sans shrink-0 py-7.5 px-0 pb-15;
+}
+
+@media screen and (max-width: 568px) {
+  .footer {
+    @apply pb-9;
+  }
+}
+}

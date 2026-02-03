@@ -4,10 +4,56 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script type="module" src="/src/index.ts"></script>
-  <link rel="stylesheet" href="/src/style.css" />
+  <link rel="stylesheet" href="/src/styles/style.css" />
   <title>Shop</title>
 </head>
 <body>
+  <div class="page__content bg-black min-h-screen antialiased flex flex-col">
   
+    <header class="header page__section">
+      <img src="<%=require('./assets/logo.svg')%>" alt="Логотип проекта" class="logo header__logo">
+    </header>
+
+    <main class="content shrink-0 grow">
+      <section class="search page__section">
+        <div class="search__block">
+          <input class="search__input">
+          <button class="search__button" type="button"></button>
+        </div>
+      </section>
+    
+      <section class="products page__section">
+        <ul class="products__list">
+        </ul>
+      </section>
+    </main>
+
+    <footer class="footer page__section">
+      <p class="footer__copyright">
+      © 2026 Zolotogornaya Maria
+      </p>
+    </footer>
+
+  
+    <div class="popup popup_type_image">
+      <div class="popup__content popup__content_content_image">
+        <button type="button" class="popup__close"></button>
+        <img src="" alt="" class="popup__image">
+        <p class="popup__caption"></p>
+      </div>
+    </div>
+  </div>
+
+  <template id="card-template">
+    <li class="product__item card">
+      <img class="card__image" src="" alt="" />
+      <button type="button" class="card__delete-button"></button>
+      <div class="card__description">
+        <h2 class="card__title">
+        </h2>
+      </div>
+    </li>
+  </template>
+
 </body>
 </html>
