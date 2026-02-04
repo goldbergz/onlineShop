@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "title": "Смарт-часы X100",
+        "price": 7490,
+        "category": "Гаджеты",
+        "image": "https://pictures.s3.yandex.net/frontend-developer/cards-compressed/arkhyz.jpg",
+        "description": "Водонепроницаемые, GPS, 7-дневный аккумулятор"
+    },
+    {
+        "id": 2,
+        "title": "Наушники ProSound",
+        "price": 4990,
+        "category": "Аудио",
+        "image": "https://pictures.s3.yandex.net/frontend-developer/cards-compressed/arkhyz.jpg",
+        "description": "Шумоподавление, Bluetooth 5.0, 20 часов работы"
+    },
+    {
+        "id": 3,
+        "title": "Фитнес-браслет FitGo",
+        "price": 2990,
+        "category": "Гаджеты",
+        "image": "https://pictures.s3.yandex.net/frontend-developer/cards-compressed/arkhyz.jpg",
+        "description": "Счетчик шагов, пульсометр, уведомления"
+    }
+]
