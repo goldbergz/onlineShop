@@ -4,7 +4,7 @@
         "title": "Смарт-часы X100",
         "price": 7490,
         "category": "Гаджеты",
-        "image": "https://pictures.s3.yandex.net/frontend-developer/cards-compressed/arkhyz.jpg",
+        "image": "https://media.istockphoto.com/id/1146224652/ru/%D0%B2%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D0%BD%D0%B0%D1%8F/%D1%81%D0%BC%D0%B0%D1%80%D1%82-%D1%87%D0%B0%D1%81%D1%8B-%D1%81-%D1%84%D0%B8%D1%82%D0%BD%D0%B5%D1%81-%D1%82%D1%80%D0%B5%D0%BA%D0%B5%D1%80%D0%BE%D0%BC-%D0%B8%D0%BB%D0%B8-%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5%D0%BC-%D0%B4%D0%BB%D1%8F-%D1%81%D1%87%D0%B5%D1%82%D1%87%D0%B8%D0%BA%D0%B0-%D1%88%D0%B0%D0%B3%D0%BE%D0%B2-%D0%BD%D0%B0-%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B5-%D0%B8%D0%BB%D0%BB%D1%8E%D1%81%D1%82%D1%80%D0%B0%D1%86%D0%B8%D1%8F.jpg?s=612x612&w=0&k=20&c=GgheoVPQlA11j99HdUA24x_8TS5FRLjVJOEfQej-J6Y=",
         "description": "Водонепроницаемые, GPS, 7-дневный аккумулятор"
     },
     {
@@ -12,7 +12,7 @@
         "title": "Наушники ProSound",
         "price": 4990,
         "category": "Аудио",
-        "image": "https://pictures.s3.yandex.net/frontend-developer/cards-compressed/arkhyz.jpg",
+        "image": "https://img.freepik.com/premium-photo/headphone-white-background-airpods-white-background_69110-267.jpg",
         "description": "Шумоподавление, Bluetooth 5.0, 20 часов работы"
     },
     {
@@ -20,7 +20,31 @@
         "title": "Фитнес-браслет FitGo",
         "price": 2990,
         "category": "Гаджеты",
-        "image": "https://pictures.s3.yandex.net/frontend-developer/cards-compressed/arkhyz.jpg",
+        "image": "https://img.freepik.com/premium-photo/fitness-bracelet-isolated-white-background-with-clipping-path_745615-327.jpg",
         "description": "Счетчик шагов, пульсометр, уведомления"
+    },
+    {
+        "id": 4,
+        "title": "Колонка BeatBox",
+        "price": 3590,
+        "category": "Аудио",
+        "image": "https://www.adverti.ru/media/catalog/product/1/2/123949.jpg",
+        "description": "Компактная, Bluetooth 5.1, до 12 часов воспроизведения"
+    },
+    {
+        "id": 5,
+        "title": "Электронная книга Rad",
+        "price": 6490,
+        "category": "Гаджеты",
+        "image": "https://s0.rbk.ru/v6_top_pics/media/img/7/12/756564147028127.png",
+        "description": "6-дюймовый экран, подсветка, 8 ГБ памяти"
+    },
+    {
+        "id": 6,
+        "title": "Смарт-колонка HomeAI",
+        "price": 5290,
+        "category": "Умный дом",
+        "image": "https://www.mijia-shop.ru/wp-content/uploads/2025/03/Xiaomi-Smart-Speaker-Pro.jpg",
+        "description": "Голосовое управление, Wi-Fi, поддержка Spotify и Alexa"
     }
 ]

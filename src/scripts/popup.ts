@@ -13,7 +13,8 @@ export function openPopup(product: Product) {
     popupImage.alt = product.title;
     popupTitle.textContent = product.title;
     popupDescription.textContent = product.description;
-    popupPrice.textContent = `${product.price} ₽`;
+  popupPrice.textContent = `${product.price} ₽`;
+  buyButton.textContent = 'Добавить в корзину'
     popup.classList.add('popup_is-opened');
 
     document.addEventListener('keydown', handleEscClose);
@@ -37,5 +38,5 @@ function handleOutsideClick(e: MouseEvent) {
 closeButton.addEventListener('click', closePopup);
 
 buyButton.addEventListener('click', () => {
-    alert('Товар добавлен в корзину 🛒');
+  buyButton.textContent = 'Товар добавлен в корзину'
 });
