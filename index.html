@@ -11,12 +11,17 @@
   <div class="page__content bg-black min-h-screen antialiased flex flex-col">
   
     <header class="header page__section">
-      <!-- <img src="<%=require('./assets/logo.svg')%>" alt="Логотип проекта" class="logo header__logo"> -->
-
       <section class="search page__section">
-        <div class="search__form">
-          <input class="search__input">
-          <button class="search__button" type="button"></button>
+        <div class="search__form" id="search-form" role="search">
+          <input 
+          class="search__input"
+      type="text"
+      name="search"
+      placeholder="Поиск товаров..."
+      aria-label="Поиск товаров по названию"
+      autocomplete="off"
+          >
+          <button class="search__button" type="submit" aria-label="Найти">Найти</button>
         </div>
       </section>
     </header>
@@ -49,7 +54,7 @@
     <li class="product__item card">
       <img class="card__image" src="" alt="" />
       <div class="card__description flex justify-between items-center bg-white px-5 py-6.25">
-        <h2 class="card__title max-w-55 text-[24px] leading-[29px] overflow-hidden whitespace-nowrap overflow-ellipsis m-0">
+        <h2 class="card__title max-w-55 text-[24px] leading-7.25 overflow-hidden whitespace-nowrap overflow-ellipsis m-0">
         </h2>
       </div>
     </li>

@@ -4,7 +4,7 @@
 }
 
 .footer__copyright {
-  @apply m-0 text-[18px] leading-5.5 text-[#545454];
+  @apply m-0 text-[18px] leading-5.5 text-gray-300;
 }
 
 
