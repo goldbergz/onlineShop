@@ -19,7 +19,7 @@
 
 .popup__close {
   @apply w-8.75 h-8.75 absolute p-0 m-0 cursor-pointer transition-all;
-  background: transparent url('../../../assets/close.svg') center no-repeat;
+  background: transparent url('../../assets/close.svg') center no-repeat;
   background-size: 35px 35px;
   transform: rotate(90deg);
 }

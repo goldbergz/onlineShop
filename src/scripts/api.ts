@@ -1,4 +1,5 @@
 import data from '../data.json' assert { type: 'json' };
+
 export interface Product {
     id: number;
     title: string;
