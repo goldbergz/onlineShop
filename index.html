@@ -41,20 +41,28 @@
     </footer>
 
   
-    <div class="popup popup_type_image">
-      <div class="popup__content popup__content_content_image">
+    <div class="popup">
+      <div class="popup__content">
         <button type="button" class="popup__close"></button>
+        <div class="popup__layout">
         <img src="" alt="" class="popup__image">
-        <p class="popup__caption"></p>
+        <div class="popup__info">
+      <h2 class="popup__title"></h2>
+      <p class="popup__description"></p>
+      <p class="popup__price"></p>
+      <button class="popup__buy-button" type="button">Купить</button>
+    </div>
+    </div>
       </div>
     </div>
+
   </div>
 
   <template id="card-template">
     <li class="product__item card">
       <img class="card__image" src="" alt="" />
       <div class="card__description flex justify-between items-center bg-white px-5 py-6.25">
-        <h2 class="card__title max-w-55 text-[24px] leading-7.25 overflow-hidden whitespace-nowrap overflow-ellipsis m-0">
+        <h2 class="card__title max-w-55 text-[20px] leading-7.25 overflow-hidden whitespace-nowrap overflow-ellipsis m-0">
         </h2>
       </div>
     </li>

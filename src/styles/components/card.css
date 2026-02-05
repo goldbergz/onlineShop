@@ -3,16 +3,6 @@
     @apply font-sans rounded-[10px] relative overflow-hidden;
   }
 
-  /* .card__delete-button {
-    @apply absolute top-4.5 right-3.75 w-4.5 h-4.5 p-0 m-0 border-none cursor-pointer transition;
-    background: transparent url('../../assets/delete-icon.svg') center no-repeat;
-    background-size: 18px 18px;
-  }
-
-  .card__delete-button:hover {
-    @apply opacity-60;
-  } */
-
   .card__image {
     @apply w-full h-70.5 object-cover;
   }

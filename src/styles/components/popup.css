@@ -1,65 +1,65 @@
 @layer components {
   .popup {
-  @apply font-sans flex items-center justify-center fixed inset-0 z-10 bg-black/50 opacity-0 invisible pointer-events-none select-none transition-all;
+    @apply fixed inset-0 z-50 flex items-center justify-center bg-black/50 opacity-0 invisible pointer-events-none transition-all;
 }
 
-.popup_is-animated {
-  @apply flex opacity-0 invisible pointer-events-none select-none transition-all;
+.popup__content {
+    @apply relative bg-white rounded-2xl shadow-xl w-[90%] md:w-[70%] lg:w-1/2 max-h-[85vh] overflow-hidden p-4;
 }
+
+   .popup__layout {
+    @apply flex flex-col gap-6;
+  }
+
+.popup__image {
+  @apply w-full max-h-[60vh] object-cover rounded-lg;
+}
+
+.popup__info {
+  @apply flex flex-col gap-4 w-full;
+}
+
+.popup__title {
+  @apply text-2xl font-semibold m-0;
+}
+
+.popup__description {
+  @apply text-gray-600 text-sm leading-relaxed;
+}
+
+.popup__price {
+  @apply text-xl font-bold text-black;
+}
+
+
+.popup__buy-button {
+  @apply mt-auto bg-black text-white py-3 rounded-lg text-base transition-all cursor-pointer;
+}
+
+.popup__buy-button:hover {
+  @apply bg-gray-800;
+}
+
+.popup__buy-button:active {
+  @apply scale-95;
+}
+
 
 .popup_is-opened {
   @apply flex opacity-100 visible pointer-events-auto;
 }
 
-.popup__caption {
-  @apply text-[12px] leading-3.75 text-white absolute m-0;
-  left: 0;
-  top: calc(100% + 10px);
-}
-
 .popup__close {
-  @apply w-8.75 h-8.75 absolute p-0 m-0 cursor-pointer transition-all;
-  background: transparent url('../../assets/close.svg') center no-repeat;
-  background-size: 35px 35px;
-  transform: rotate(90deg);
-}
+@apply absolute top-4 right-4 w-8 h-8 cursor-pointer transition-opacity;
+    background: url('../../assets/close.svg') center/contain no-repeat;
+  }
 
 .popup__close:hover {
   @apply opacity-60;
 }
 
-.popup__content {
-  @apply relative max-w-107.5 w-full min-h-45.25 bg-white rounded-[10px] box-border p-[34px_36px];
-}
 
-@media screen and (max-width: 568px) {
-  .popup__content {
-    width: 100%;
-    max-width: calc(100% - 80px);
-    margin-top: 40px;
-    padding: 30px 20px;
-  }
-}
-
-.popup__content_content_image {
-  @apply flex bg-transparent p-0;
-  max-width: 75vw;
-  max-height: 75vh;
-  height: auto;
-  width: auto;
-  border-radius: 0;
-  background-size: cover;
-}
-
-.popup__image {
-  @apply block max-w-full max-h-full object-cover;
-}
-
-.popup__title {
-  @apply m-0 text-[24px] leading-7.5;
-}
-
-@media screen and (max-width: 568px) {
+@media screen and (max-width: 768px) {
   .popup__title {
     @apply text-[18px] leading-5.5;
   }

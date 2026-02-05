@@ -1,15 +1,19 @@
 import type { Product } from './api';
 
-const popup = document.querySelector('.popup_type_image') as HTMLDivElement;
-const modalImage = popup.querySelector('.popup__image') as HTMLImageElement;
-const modalCaption = popup.querySelector('.popup__caption') as HTMLParagraphElement;
-const closeButton = popup.querySelector('.popup__close') as HTMLButtonElement;
+const popup = document.querySelector('.popup') as HTMLDivElement;
+const popupImage = popup.querySelector('.popup__image') as HTMLImageElement;
+const popupTitle = popup.querySelector('.popup__title') as HTMLHeadingElement;
+const popupDescription = popup.querySelector('.popup__description') as HTMLParagraphElement;
+const popupPrice = popup.querySelector('.popup__price') as HTMLParagraphElement; const closeButton = popup.querySelector('.popup__close') as HTMLButtonElement;
+const buyButton = popup.querySelector('.popup__buy-button') as HTMLButtonElement;
+
 
 export function openPopup(product: Product) {
-    modalImage.src = product.image;
-    modalImage.alt = product.title;
-    modalCaption.textContent = `${product.title} — ${product.description} (${product.price} ₽)`;
-
+    popupImage.src = product.image;
+    popupImage.alt = product.title;
+    popupTitle.textContent = product.title;
+    popupDescription.textContent = product.description;
+    popupPrice.textContent = `${product.price} ₽`;
     popup.classList.add('popup_is-opened');
 
     document.addEventListener('keydown', handleEscClose);
@@ -31,3 +35,7 @@ function handleOutsideClick(e: MouseEvent) {
 }
 
 closeButton.addEventListener('click', closePopup);
+
+buyButton.addEventListener('click', () => {
+    alert('Товар добавлен в корзину 🛒');
+});
