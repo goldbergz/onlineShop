@@ -16,7 +16,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "format": "prettier --write \"src/**/*.{js,ts,json,css,html}\""
+    "format": "prettier --write \"src/**/*.{js,ts,json,css}\" \"*.html\""
   },
   "devDependencies": {
     "prettier": "^3.8.1",

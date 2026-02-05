@@ -8,11 +8,11 @@
   }
 
   .popup__layout {
-    @apply flex flex-col gap-6;
+    @apply flex flex-col gap-6 h-full;
   }
 
   .popup__image {
-    @apply w-full max-h-[60vh] object-cover rounded-lg;
+    @apply w-full h-auto max-h-[60vh] object-contain rounded-lg;
   }
 
   .popup__info {

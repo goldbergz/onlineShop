@@ -7,10 +7,12 @@ export function createCard(product: Product): HTMLLIElement {
 
   const img = cardElement.querySelector('.card__image') as HTMLImageElement;
   const title = cardElement.querySelector('.card__title') as HTMLHeadingElement;
+  const price = cardElement.querySelector('.card__price') as HTMLParagraphElement;
 
   img.src = product.image;
   img.alt = product.title;
   title.textContent = product.title;
+  price.textContent = `${product.price} ₽`;
 
   cardElement.addEventListener('click', () => openPopup(product));
 
