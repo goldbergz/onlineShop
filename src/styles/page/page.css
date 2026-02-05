@@ -1,11 +1,11 @@
 @layer components {
-.page__section {
-  @apply w-full max-w-[882px] relative mx-auto box-border;
-}
-
-@media (max-width: 1140px) {
   .page__section {
-    width: calc(100% - 40px);
+    @apply w-full max-w-[882px] relative mx-auto box-border;
   }
-}
+
+  @media (max-width: 1140px) {
+    .page__section {
+      width: calc(100% - 40px);
+    }
+  }
 }

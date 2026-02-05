@@ -1,69 +1,64 @@
 @layer components {
   .popup {
     @apply fixed inset-0 z-50 flex items-center justify-center bg-black/50 opacity-0 invisible pointer-events-none transition-all;
-}
+  }
 
-.popup__content {
+  .popup__content {
     @apply relative bg-white rounded-2xl shadow-xl w-[90%] md:w-[70%] lg:w-1/2 max-h-[85vh] overflow-hidden p-4;
-}
+  }
 
-   .popup__layout {
+  .popup__layout {
     @apply flex flex-col gap-6;
   }
 
-.popup__image {
-  @apply w-full max-h-[60vh] object-cover rounded-lg;
-}
+  .popup__image {
+    @apply w-full max-h-[60vh] object-cover rounded-lg;
+  }
 
-.popup__info {
-  @apply flex flex-col gap-4 w-full;
-}
+  .popup__info {
+    @apply flex flex-col gap-4 w-full;
+  }
 
-.popup__title {
-  @apply text-2xl font-semibold m-0;
-}
+  .popup__title {
+    @apply text-2xl font-semibold m-0;
+  }
 
-.popup__description {
-  @apply text-gray-600 text-sm leading-relaxed;
-}
+  .popup__description {
+    @apply text-gray-600 text-sm leading-relaxed;
+  }
 
-.popup__price {
-  @apply text-xl font-bold text-black;
-}
+  .popup__price {
+    @apply text-xl font-bold text-black;
+  }
 
+  .popup__buy-button {
+    @apply mt-auto bg-black text-white py-3 rounded-lg text-base transition-all cursor-pointer;
+  }
 
-.popup__buy-button {
-  @apply mt-auto bg-black text-white py-3 rounded-lg text-base transition-all cursor-pointer;
-}
+  .popup__buy-button:hover {
+    @apply bg-gray-800;
+  }
 
-.popup__buy-button:hover {
-  @apply bg-gray-800;
-}
+  .popup__buy-button:active {
+    @apply scale-95;
+  }
 
-.popup__buy-button:active {
-  @apply scale-95;
-}
+  .popup_is-opened {
+    @apply flex opacity-100 visible pointer-events-auto;
+  }
 
-
-.popup_is-opened {
-  @apply flex opacity-100 visible pointer-events-auto;
-}
-
-.popup__close {
-@apply absolute top-4 right-4 w-8 h-8 cursor-pointer transition-opacity;
+  .popup__close {
+    @apply absolute top-4 right-4 w-8 h-8 cursor-pointer transition-opacity;
     background: url('../../assets/close.svg') center/contain no-repeat;
   }
 
-.popup__close:hover {
-  @apply opacity-60;
-}
-
-
-@media screen and (max-width: 768px) {
-
-  .popup__title {
-    @apply text-[18px] leading-5.5;
+  .popup__close:hover {
+    @apply opacity-60;
   }
-}
 
+  @media screen and (max-width: 768px) {
+    .popup__title {
+      @apply text-[18px] leading-5.5;
+    }
+  }
 }

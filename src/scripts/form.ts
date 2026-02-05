@@ -8,16 +8,14 @@ export function initSearch(products: Product[], container: HTMLElement) {
   function handleSearch() {
     const query = input.value.trim().toLowerCase();
 
-    const filtered = products.filter(product =>
-      product.title.toLowerCase().includes(query)
-    );
+    const filtered = products.filter(product => product.title.toLowerCase().includes(query));
 
     renderProducts(filtered, container);
   }
 
   input.addEventListener('input', handleSearch);
 
-  form.addEventListener('submit', (e) => {
+  form.addEventListener('submit', e => {
     e.preventDefault();
     handleSearch();
   });
